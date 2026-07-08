@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Tax Calculator Aaykar Ganana</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; padding: 20px; max-width: 800px; margin: 0 auto; background-color: #f0f2f5; color: #333; }
+        .container { background: #ffffff; padding: 30px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        h1, h2 { color: #1e3c72; }
+        p { font-size: 16px; }
+        
+        /* Language Toggle Button Style */
+        .lang-btn {
+            background: #1e3c72;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            float: right;
+            transition: background 0.3s;
+        }
+        .lang-btn:hover {
+            background: #2a5298;
+        }
+        
+        /* Clearfix for the button */
+        .header-section::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header-section">
+            <!-- Toggle Button -->
+            <button id="toggleBtn" class="lang-btn" onclick="toggleLanguage()">हिंदी में पढ़ें</button>
+        </div>
+
+        <!-- ENGLISH CONTENT -->
+        <div id="englishContent">
+            <h1>Privacy Policy</h1>
+            <p><strong>Last updated:</strong> July 2026</p>
+
+            <p>This Privacy Policy explains how we handle your data when you use the <strong>Tax Calculator - Aaykar Ganana</strong> application ("the App").</p>
+
+            <h2>1. Data Collection and Use</h2>
+            <p>The App is designed to calculate income tax and generate GA55 formats. <strong>We do not collect, store, or transmit any personal information, financial data, or sensitive user data to any external servers.</strong> All calculations and PDF generation are performed locally on your device.</p>
+
+            <h2>2. Internet Permission</h2>
+            <p>The App may require internet permission solely for downloading necessary updates or opening external informational links, but it does not use the internet to upload your private data.</p>
+
+            <h2>3. Local Storage</h2>
+            <p>The App may save some of your preferences or generated PDFs locally on your device's storage for your convenience. This data remains on your device and is not accessible by us.</p>
+
+            <h2>4. Changes to This Privacy Policy</h2>
+            <p>We may update our Privacy Policy from time to time. We advise you to review this page periodically for any changes.</p>
+
+            <h2>5. Contact Us</h2>
+            <p>If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us at: <strong>[आपकी ईमेल आईडी यहाँ लिखें]</strong></p>
+        </div>
+
+        <!-- HINDI CONTENT (Hidden by default) -->
+        <div id="hindiContent" style="display: none;">
+            <h1>गोपनीयता नीति (Privacy Policy)</h1>
+            <p><strong>अंतिम अपडेट:</strong> जुलाई 2026</p>
+
+            <p>यह गोपनीयता नीति बताती है कि जब आप <strong>आयकर गणना प्रपत्र (Tax Calculator)</strong> ऐप का उपयोग करते हैं, तो हम आपके डेटा को कैसे सुरक्षित रखते हैं।</p>
+
+            <h2>1. डेटा संग्रह और उपयोग</h2>
+            <p>यह ऐप आयकर की गणना करने और GA55 प्रपत्र बनाने के लिए डिज़ाइन किया गया है। <strong>हम आपका कोई भी व्यक्तिगत, वित्तीय या संवेदनशील डेटा किसी भी बाहरी सर्वर पर एकत्र, स्टोर या ट्रांसफर नहीं करते हैं।</strong> सभी गणनाएं और PDF निर्माण पूरी तरह से आपके मोबाइल/डिवाइस के अंदर ही होते हैं।</p>
+
+            <h2>2. इंटरनेट की अनुमति</h2>
+            <p>ऐप को आवश्यक अपडेट की जांच करने या बाहरी लिंक खोलने के लिए इंटरनेट की आवश्यकता हो सकती है, लेकिन यह आपके निजी डेटा को इंटरनेट पर अपलोड करने के लिए कभी भी इंटरनेट का उपयोग नहीं करता है।</p>
+
+            <h2>3. लोकल स्टोरेज (डिवाइस मेमोरी)</h2>
+            <p>आपकी सुविधा के लिए, ऐप आपके द्वारा बनाई गई PDF फ़ाइलों या आपकी सेटिंग्स को आपके डिवाइस (लोकल स्टोरेज) में ही सेव करता है। यह डेटा केवल आपके डिवाइस पर रहता है और हम इसे नहीं देख सकते।</p>
+
+            <h2>4. नीति में बदलाव</h2>
+            <p>हम समय-समय पर अपनी गोपनीयता नीति को अपडेट कर सकते हैं। इसलिए, हम आपको सलाह देते हैं कि आप किसी भी बदलाव के लिए समय-समय पर इस पेज को देखते रहें।</p>
+
+            <h2>5. संपर्क करें</h2>
+            <p>यदि हमारी गोपनीयता नीति के बारे में आपके कोई प्रश्न या सुझाव हैं, तो बेझिझक हमसे संपर्क करें: <strong>pc.muhal@gmail.com</strong></p>
+        </div>
+    </div>
+
+    <!-- JAVASCRIPT FOR TOGGLE BUTTON -->
+    <script>
+        function toggleLanguage() {
+            var engContent = document.getElementById("englishContent");
+            var hinContent = document.getElementById("hindiContent");
+            var btn = document.getElementById("toggleBtn");
+
+            if (engContent.style.display === "none") {
+                // Show English
+                engContent.style.display = "block";
+                hinContent.style.display = "none";
+                btn.innerHTML = "हिंदी में पढ़ें";
+            } else {
+                // Show Hindi
+                engContent.style.display = "none";
+                hinContent.style.display = "block";
+                btn.innerHTML = "Read in English";
+            }
+        }
+    </script>
+</body>
+</html>
