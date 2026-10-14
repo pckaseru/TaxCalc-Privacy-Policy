@@ -3,71 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - Tax Calculator Aaykar Ganana</title>
+    <title>Privacy Policy - TaxCalc Pro (Aaykar Ganana)</title>
     <style>
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; padding: 20px; max-width: 800px; margin: 0 auto; background-color: #f0f2f5; color: #333; }
+        
+        /* Top Navigation Menu Bar */
+        .navbar { background: #1e3c72; padding: 12px 20px; border-radius: 8px; margin-bottom: 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; }
+        .navbar a { color: #ffffff; text-decoration: none; font-size: 14px; font-weight: 600; margin-right: 15px; }
+        .navbar a:hover { text-decoration: underline; color: #ffeb3b; }
+
         .container { background: #ffffff; padding: 30px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
         h1, h2 { color: #1e3c72; }
         p { font-size: 16px; }
         
         /* Language Toggle Button Style */
         .lang-btn {
-            background: #1e3c72;
+            background: #ff9800;
             color: #ffffff;
             border: none;
-            padding: 10px 20px;
-            font-size: 16px;
+            padding: 8px 16px;
+            font-size: 14px;
             font-weight: bold;
             border-radius: 5px;
             cursor: pointer;
-            float: right;
             transition: background 0.3s;
         }
-        .lang-btn:hover {
-            background: #2a5298;
-        }
+        .lang-btn:hover { background: #f57c00; }
         
-        /* Clearfix for the button */
-        .header-section::after {
-            content: "";
-            clear: both;
-            display: table;
-        }
+        .header-section { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; border-bottom: 2px solid #eee; padding-bottom: 10px; }
         
         a { color: #1e3c72; text-decoration: none; font-weight: bold; }
         a:hover { text-decoration: underline; }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="header-section">
-            <!-- Toggle Button -->
+
+    <!-- TOP NAVIGATION MENU -->
+    <div class="navbar">
+        <div>
+            <a href="#">🏠 Home</a>
+            <a href="#contact">📞 Contact</a>
+            <a href="https://play.google.com/store/search?q=pub:Prem+Ji+(Jhunjhunu)&c=apps" target="_blank">📱 More Apps</a>
+        </div>
+        <div>
+            <!-- Language Toggle Button inside Navbar -->
             <button id="toggleBtn" class="lang-btn" onclick="toggleLanguage()">हिंदी में पढ़ें</button>
         </div>
+    </div>
 
+    <div class="container">
         <!-- ENGLISH CONTENT -->
         <div id="englishContent">
             <h1>Privacy Policy</h1>
             <p><strong>Last updated:</strong> July 2026</p>
 
-            <p>This Privacy Policy explains how we handle your data when you use the <strong>Tax Calculator - Aaykar Ganana</strong> application ("the App").</p>
+            <p>This Privacy Policy explains how we handle your data when you use the <strong>TaxCalc Pro - Aaykar Ganana</strong> application ("the App").</p>
 
             <h2>1. Data Collection and File Processing</h2>
             <p>The App provides a feature to upload your original GA55 document to extract and read data for tax calculations. <strong>Please note that all document processing, data extraction, and PDF generation happen locally on your device.</strong> We do not upload, store, or share your GA55 documents, personal information, or financial data on any external servers.</p>
 
-            <h2>2. Advertisements and Third-Party Services</h2>
-            <p>The App is supported by advertisements. We use third-party advertising services (such as Google AdMob) to serve these ads. These third-party networks may collect and use non-personal data, such as your device's Advertising ID, IP address, and usage information, to provide personalized or non-personalized ads. We do not share your tax data or GA55 information with these advertisers.</p>
+            <h2>2. Live Updates & Firebase Services</h2>
+            <p>The App uses <strong>Firebase Realtime Database</strong> (by Google) to fetch live breaking news banners, tax circulars, and notifications. This service only retrieves public information published by the admin and does not collect or track your personal financial data.</p>
 
-            <h2>3. Internet Permission</h2>
-            <p>The App requires internet permission primarily to fetch and display advertisements, check for necessary updates, or open external informational links. It does not use the internet to secretly upload your private data.</p>
+            <h2>3. Advertisements and Third-Party Services</h2>
+            <p>The App is supported by advertisements. We use third-party advertising services (such as Google AdMob) to serve Banner, Interstitial, and App Open ads. These third-party networks may collect and use non-personal data, such as your device's Advertising ID, IP address, and usage information, to provide personalized or non-personalized ads. We do not share your tax data or GA55 information with these advertisers.</p>
 
-            <h2>4. Local Storage</h2>
-            <p>The App saves your preferences and generated PDF files locally on your device's storage for your convenience. This data remains strictly on your device.</p>
+            <h2>4. Internet Permission</h2>
+            <p>The App requires internet permission to fetch live tax updates, load advertisements, check for app updates, and open official PDF links. It does not use the internet to secretly upload your private tax data.</p>
 
-            <h2>5. Changes to This Privacy Policy</h2>
+            <h2>5. Local Storage</h2>
+            <p>The App saves your preferences, salary entries, and generated PDF files locally on your device's storage using <code>SharedPreferences</code> for your convenience. This data remains strictly on your device.</p>
+
+            <h2>6. Changes to This Privacy Policy</h2>
             <p>We may update our Privacy Policy from time to time. We advise you to review this page periodically for any changes. Changes are effective immediately upon posting.</p>
 
-            <h2>6. Contact Us</h2>
+            <h2 id="contact">7. Contact Us</h2>
             <p>If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us at: <a href="mailto:pc.muhal@gmail.com">pc.muhal@gmail.com</a></p>
         </div>
 
@@ -76,24 +86,27 @@
             <h1>गोपनीयता नीति (Privacy Policy)</h1>
             <p><strong>अंतिम अपडेट:</strong> जुलाई 2026</p>
 
-            <p>यह गोपनीयता नीति बताती है कि जब आप <strong>आयकर गणना प्रपत्र (Tax Calculator)</strong> ऐप का उपयोग करते हैं, तो हम आपके डेटा को कैसे सुरक्षित रखते हैं।</p>
+            <p>यह गोपनीयता नीति बताती है कि जब आप <strong>TaxCalc Pro (आयकर गणना)</strong> ऐप का उपयोग करते हैं, तो हम आपके डेटा को कैसे सुरक्षित रखते हैं।</p>
 
             <h2>1. डेटा संग्रह और फ़ाइल प्रोसेसिंग</h2>
-            <p>यह ऐप आपको अपना मूल GA55 प्रपत्र अपलोड करके डेटा पढ़ने की सुविधा देता है। <strong>कृपया ध्यान दें कि दस्तावेज़ पढ़ने, डेटा निकालने और PDF बनाने की पूरी प्रक्रिया केवल आपके मोबाइल/डिवाइस के अंदर ही होती है।</strong> हम आपके GA55 दस्तावेज़ या किसी भी व्यक्तिगत/वित्तीय डेटा को अपने सर्वर पर अपलोड, स्टोर या शेयर नहीं करते हैं।</p>
+            <p>यह ऐप आपको अपना मूल GA55 प्रपत्र अपलोड करके डेटा पढ़ने की सुविधा देता है। <strong>कृपया ध्यान दें कि दस्तावेज़ पढ़ने, डेटा निकालने और PDF बनाने की पूरी प्रक्रिया केवल आपके मोबाइल/डिवाइस के अंदर ही होती है।</strong> हम आपके GA55 दस्तावेज़ या किसी भी व्यक्तिगत/वित्तीय डेटा को अपने सर्वर पर अपलोड, स्टोर या शेयर नहीं करते हैं.</p>
 
-            <h2>2. विज्ञापन (Advertisements) और थर्ड-पार्टी सेवाएं</h2>
-            <p>यह ऐप विज्ञापनों द्वारा समर्थित है। ऐप में विज्ञापन दिखाने के लिए हम थर्ड-पार्टी सेवाओं (जैसे Google AdMob) का उपयोग करते हैं। ये थर्ड-पार्टी नेटवर्क प्रासंगिक विज्ञापन दिखाने के लिए आपके डिवाइस की एडवरटाइजिंग आईडी (Advertising ID), आईपी एड्रेस और उपयोग डेटा जैसी गैर-व्यक्तिगत जानकारी एकत्र कर सकते हैं। हम आपका टैक्स डेटा या GA55 की जानकारी इन विज्ञापनदाताओं के साथ कभी साझा नहीं करते हैं।</p>
+            <h2>2. लाइव अपडेट और फ़ायरबेस सेवाएं</h2>
+            <p>ऐप लाइव ब्रेकिंग न्यूज़ बैनर, टैक्स सर्कुलर और नोटिफिकेशन प्राप्त करने के लिए <strong>Firebase Realtime Database</strong> का उपयोग करता है। यह सेवा केवल एडमिन द्वारा पब्लिश की गई सार्वजनिक जानकारी को डाउनलोड करती है और आपके निजी वित्तीय डेटा को ट्रैक नहीं करती है।</p>
 
-            <h2>3. इंटरनेट की अनुमति</h2>
-            <p>ऐप को मुख्य रूप से विज्ञापन दिखाने, अपडेट की जांच करने या बाहरी लिंक खोलने के लिए इंटरनेट की आवश्यकता होती है। यह आपके निजी डेटा को इंटरनेट पर अपलोड करने के लिए कभी भी इंटरनेट का उपयोग नहीं करता है।</p>
+            <h2>3. विज्ञापन (Advertisements) और थर्ड-पार्टी सेवाएं</h2>
+            <p>यह ऐप विज्ञापनों द्वारा समर्थित है। ऐप में बैनर, इंटरस्टीशियल और ऐप ओपन विज्ञापन दिखाने के लिए हम Google AdMob का उपयोग करते हैं। ये थर्ड-पार्टी नेटवर्क प्रासंगिक विज्ञापन दिखाने के लिए आपके डिवाइस की एडवरटाइजिंग आईडी, आईपी एड्रेस और उपयोग डेटा एकत्र कर सकते हैं। हम आपका टैक्स डेटा या GA55 की जानकारी इन विज्ञापनदाताओं के साथ कभी साझा नहीं करते हैं।</p>
 
-            <h2>4. लोकल स्टोरेज (डिवाइस मेमोरी)</h2>
-            <p>आपकी सुविधा के लिए, ऐप आपके द्वारा बनाई गई PDF फ़ाइलों या आपकी सेटिंग्स को आपके डिवाइस (लोकल स्टोरेज) में ही सेव करता है। यह डेटा केवल आपके डिवाइस पर ही सुरक्षित रहता है।</p>
+            <h2>4. इंटरनेट की अनुमति</h2>
+            <p>ऐप को लाइव टैक्स अपडेट प्राप्त करने, विज्ञापन दिखाने, ऐप अपडेट की जांच करने और आधिकारिक पीडीएफ लिंक खोलने के लिए इंटरनेट की आवश्यकता होती है। यह आपके निजी डेटा को इंटरनेट पर अपलोड करने के लिए कभी भी इंटरनेट का उपयोग नहीं करता है।</p>
 
-            <h2>5. नीति में बदलाव</h2>
+            <h2>5. लोकल स्टोरेज (डिवाइस मेमोरी)</h2>
+            <p>आपकी सुविधा के लिए, ऐप आपके द्वारा दर्ज किए गए वेतन विवरण और बनाई गई PDF फ़ाइलों को आपके डिवाइस के लोकल स्टोरेज में ही सुरक्षित रखता है।</p>
+
+            <h2>6. नीति में बदलाव</h2>
             <p>हम समय-समय पर अपनी गोपनीयता नीति को अपडेट कर सकते हैं। इसलिए, हम आपको सलाह देते हैं कि आप किसी भी बदलाव के लिए समय-समय पर इस पेज को देखते रहें।</p>
 
-            <h2>6. संपर्क करें</h2>
+            <h2 id="contact">7. संपर्क करें</h2>
             <p>यदि हमारी गोपनीयता नीति के बारे में आपके कोई प्रश्न या सुझाव हैं, तो बेझिझक हमसे संपर्क करें: <a href="mailto:pc.muhal@gmail.com">pc.muhal@gmail.com</a></p>
         </div>
     </div>
@@ -106,12 +119,10 @@
             var btn = document.getElementById("toggleBtn");
 
             if (engContent.style.display === "none") {
-                // Show English
                 engContent.style.display = "block";
                 hinContent.style.display = "none";
                 btn.innerHTML = "हिंदी में पढ़ें";
             } else {
-                // Show Hindi
                 engContent.style.display = "none";
                 hinContent.style.display = "block";
                 btn.innerHTML = "Read in English";
