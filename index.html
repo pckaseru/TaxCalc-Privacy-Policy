@@ -5,50 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy - TaxCalc Pro (Aaykar Ganana)</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; padding: 20px; max-width: 800px; margin: 0 auto; background-color: #f0f2f5; color: #333; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; padding: 0; margin: 0; background-color: #f8f9fa; color: #333; }
         
-        /* Top Navigation Menu Bar */
-        .navbar { background: #1e3c72; padding: 12px 20px; border-radius: 8px; margin-bottom: 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; }
-        .navbar a { color: #ffffff; text-decoration: none; font-size: 14px; font-weight: 600; margin-right: 15px; }
-        .navbar a:hover { text-decoration: underline; color: #ffeb3b; }
-
-        .container { background: #ffffff; padding: 30px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
-        h1, h2 { color: #1e3c72; }
-        p { font-size: 16px; }
+        /* Classic Top Header Bar */
+        .header-bar { background: #1e3c72; color: #ffffff; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .header-bar h2 { margin: 0; font-size: 18px; letter-spacing: 0.5px; }
         
-        /* Language Toggle Button Style */
+        /* Language Toggle Button */
         .lang-btn {
             background: #ff9800;
             color: #ffffff;
             border: none;
-            padding: 8px 16px;
-            font-size: 14px;
+            padding: 7px 14px;
+            font-size: 13px;
             font-weight: bold;
-            border-radius: 5px;
+            border-radius: 4px;
             cursor: pointer;
             transition: background 0.3s;
         }
         .lang-btn:hover { background: #f57c00; }
+
+        .container { max-width: 800px; margin: 20px auto; background: #ffffff; padding: 30px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+        h1, h2.section-title { color: #1e3c72; }
+        p { font-size: 15px; color: #444; }
         
-        .header-section { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; border-bottom: 2px solid #eee; padding-bottom: 10px; }
-        
+        /* Footer Links */
+        .footer-nav { text-align: center; margin-top: 30px; padding-top: 15px; border-top: 1px solid #ddd; font-size: 14px; }
+        .footer-nav a { color: #1e3c72; text-decoration: none; margin: 0 10px; font-weight: 600; }
+        .footer-nav a:hover { text-decoration: underline; }
+
         a { color: #1e3c72; text-decoration: none; font-weight: bold; }
         a:hover { text-decoration: underline; }
     </style>
 </head>
 <body>
 
-    <!-- TOP NAVIGATION MENU -->
-    <div class="navbar">
-        <div>
-            <a href="#">🏠 Home</a>
-            <a href="#contact">📞 Contact</a>
-            <a href="https://play.google.com/store/search?q=pub:Prem+Ji+(Jhunjhunu)&c=apps" target="_blank">📱 More Apps</a>
-        </div>
-        <div>
-            <!-- Language Toggle Button inside Navbar -->
-            <button id="toggleBtn" class="lang-btn" onclick="toggleLanguage()">हिंदी में पढ़ें</button>
-        </div>
+    <!-- CLASSIC TOP HEADER BAR -->
+    <div class="header-bar">
+        <h2>📊 TaxCalc Pro</h2>
+        <button id="toggleBtn" class="lang-btn" onclick="toggleLanguage()">हिंदी में पढ़ें</button>
     </div>
 
     <div class="container">
@@ -89,7 +84,7 @@
             <p>यह गोपनीयता नीति बताती है कि जब आप <strong>TaxCalc Pro (आयकर गणना)</strong> ऐप का उपयोग करते हैं, तो हम आपके डेटा को कैसे सुरक्षित रखते हैं।</p>
 
             <h2>1. डेटा संग्रह और फ़ाइल प्रोसेसिंग</h2>
-            <p>यह ऐप आपको अपना मूल GA55 प्रपत्र अपलोड करके डेटा पढ़ने की सुविधा देता है। <strong>कृपया ध्यान दें कि दस्तावेज़ पढ़ने, डेटा निकालने और PDF बनाने की पूरी प्रक्रिया केवल आपके मोबाइल/डिवाइस के अंदर ही होती है।</strong> हम आपके GA55 दस्तावेज़ या किसी भी व्यक्तिगत/वित्तीय डेटा को अपने सर्वर पर अपलोड, स्टोर या शेयर नहीं करते हैं.</p>
+            <p>यह ऐप आपको अपना मूल GA55 प्रपत्र अपलोड करके डेटा पढ़ने की सुविधा देता है। <strong>कृपया ध्यान दें कि दस्तावेज़ पढ़ने, डेटा निकालने और PDF बनाने की पूरी प्रक्रिया केवल आपके मोबाइल/डिवाइस के अंदर ही होती है।</strong> हम आपके GA55 दस्तावेज़ या किसी भी व्यक्तिगत/वित्तीय डेटा को अपने सर्वर पर अपलोड, स्टोर या शेयर नहीं करते हैं।</p>
 
             <h2>2. लाइव अपडेट और फ़ायरबेस सेवाएं</h2>
             <p>ऐप लाइव ब्रेकिंग न्यूज़ बैनर, टैक्स सर्कुलर और नोटिफिकेशन प्राप्त करने के लिए <strong>Firebase Realtime Database</strong> का उपयोग करता है। यह सेवा केवल एडमिन द्वारा पब्लिश की गई सार्वजनिक जानकारी को डाउनलोड करती है और आपके निजी वित्तीय डेटा को ट्रैक नहीं करती है।</p>
@@ -108,6 +103,12 @@
 
             <h2 id="contact">7. संपर्क करें</h2>
             <p>यदि हमारी गोपनीयता नीति के बारे में आपके कोई प्रश्न या सुझाव हैं, तो बेझिझक हमसे संपर्क करें: <a href="mailto:pc.muhal@gmail.com">pc.muhal@gmail.com</a></p>
+        </div>
+
+        <!-- FOOTER QUICK LINKS -->
+        <div class="footer-nav">
+            <a href="https://play.google.com/store/search?q=pub:Prem+Ji+(Jhunjhunu)&c=apps" target="_blank">📱 More Apps</a> | 
+            <a href="mailto:pc.muhal@gmail.com">📞 Support / Contact</a>
         </div>
     </div>
 
