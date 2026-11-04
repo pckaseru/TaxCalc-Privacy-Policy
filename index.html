@@ -50,7 +50,7 @@
         <!-- ENGLISH CONTENT -->
         <div id="englishContent">
             <h1>Privacy Policy</h1>
-            <p><strong>Last updated:</strong> July 2026</p>
+            <p><strong>Last updated:</strong> November 2026</p>
 
             <p>This Privacy Policy explains how we handle your data when you use the <strong>TaxCalc Pro - Aaykar Ganana</strong> application ("the App").</p>
 
@@ -58,28 +58,32 @@
             <p>The App provides a feature to upload your original GA55 document to extract and read data for tax calculations. <strong>Please note that all document processing, data extraction, and PDF generation happen locally on your device.</strong> We do not upload, store, or share your GA55 documents, personal information, or financial data on any external servers.</p>
 
             <h2>2. Live Updates & Firebase Services</h2>
-            <p>The App uses <strong>Firebase Realtime Database</strong> (by Google) to fetch live breaking news banners, tax circulars, and notifications. This service only retrieves public information published by the admin and does not collect or track your personal financial data.</p>
+            <p>The App uses <strong>Firebase Realtime Database</strong> (by Google) to fetch live breaking news banners, tax circulars, and notifications. This service retrieves public information published by the admin.</p>
 
-            <h2>3. Advertisements and Third-Party Services</h2>
+            <!-- नया पॉइंट जोड़ा गया है -->
+            <h2>3. User Comments & Anonymous Device ID (UUID)</h2>
+            <p>The App features a discussion/reply section for news updates. If you choose to post a comment, the name you provide (optional) and your message are stored securely in our Firebase database. To allow you to manage and edit your comments without requiring a user login/account, the App generates an anonymous, random Unique Identifier (UUID) saved locally on your device. <strong>We do not access, collect, or track your real hardware Device ID (such as IMEI or MAC address).</strong> The UUID is used strictly for managing your comments within the app.</p>
+
+            <h2>4. Advertisements and Third-Party Services</h2>
             <p>The App is supported by advertisements. We use third-party advertising services (such as Google AdMob) to serve Banner, Interstitial, and App Open ads. These third-party networks may collect and use non-personal data, such as your device's Advertising ID, IP address, and usage information, to provide personalized or non-personalized ads. We do not share your tax data or GA55 information with these advertisers.</p>
 
-            <h2>4. Internet Permission</h2>
-            <p>The App requires internet permission to fetch live tax updates, load advertisements, check for app updates, and open official PDF links. It does not use the internet to secretly upload your private tax data.</p>
+            <h2>5. Internet Permission</h2>
+            <p>The App requires internet permission to fetch live tax updates, load advertisements, check for app updates, post user comments, and open official PDF links. It does not use the internet to secretly upload your private tax data.</p>
 
-            <h2>5. Local Storage</h2>
-            <p>The App saves your preferences, salary entries, and generated PDF files locally on your device's storage using <code>SharedPreferences</code> for your convenience. This data remains strictly on your device.</p>
+            <h2>6. Local Storage</h2>
+            <p>The App saves your preferences, salary entries, anonymous UUID, and generated PDF files locally on your device's storage using <code>SharedPreferences</code> for your convenience. This data remains strictly on your device.</p>
 
-            <h2>6. Changes to This Privacy Policy</h2>
+            <h2>7. Changes to This Privacy Policy</h2>
             <p>We may update our Privacy Policy from time to time. We advise you to review this page periodically for any changes. Changes are effective immediately upon posting.</p>
 
-            <h2 id="contact">7. Contact Us</h2>
+            <h2 id="contact">8. Contact Us</h2>
             <p>If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us at: <a href="mailto:pc.muhal@gmail.com">pc.muhal@gmail.com</a></p>
         </div>
 
         <!-- HINDI CONTENT (Hidden by default) -->
         <div id="hindiContent" style="display: none;">
             <h1>गोपनीयता नीति (Privacy Policy)</h1>
-            <p><strong>अंतिम अपडेट:</strong> जुलाई 2026</p>
+            <p><strong>अंतिम अपडेट:</strong> नवम्बर 2026</p>
 
             <p>यह गोपनीयता नीति बताती है कि जब आप <strong>TaxCalc Pro (आयकर गणना)</strong> ऐप का उपयोग करते हैं, तो हम आपके डेटा को कैसे सुरक्षित रखते हैं।</p>
 
@@ -87,21 +91,25 @@
             <p>यह ऐप आपको अपना मूल GA55 प्रपत्र अपलोड करके डेटा पढ़ने की सुविधा देता है। <strong>कृपया ध्यान दें कि दस्तावेज़ पढ़ने, डेटा निकालने और PDF बनाने की पूरी प्रक्रिया केवल आपके मोबाइल/डिवाइस के अंदर ही होती है।</strong> हम आपके GA55 दस्तावेज़ या किसी भी व्यक्तिगत/वित्तीय डेटा को अपने सर्वर पर अपलोड, स्टोर या शेयर नहीं करते हैं।</p>
 
             <h2>2. लाइव अपडेट और फ़ायरबेस सेवाएं</h2>
-            <p>ऐप लाइव ब्रेकिंग न्यूज़ बैनर, टैक्स सर्कुलर और नोटिफिकेशन प्राप्त करने के लिए <strong>Firebase Realtime Database</strong> का उपयोग करता है। यह सेवा केवल एडमिन द्वारा पब्लिश की गई सार्वजनिक जानकारी को डाउनलोड करती है और आपके निजी वित्तीय डेटा को ट्रैक नहीं करती है।</p>
+            <p>ऐप लाइव ब्रेकिंग न्यूज़ बैनर, टैक्स सर्कुलर और नोटिफिकेशन प्राप्त करने के लिए <strong>Firebase Realtime Database</strong> का उपयोग करता है। यह सेवा केवल एडमिन द्वारा पब्लिश की गई सार्वजनिक जानकारी को डाउनलोड करती है।</p>
 
-            <h2>3. विज्ञापन (Advertisements) और थर्ड-पार्टी सेवाएं</h2>
+            <!-- नया पॉइंट जोड़ा गया है -->
+            <h2>3. यूज़र कमेंट्स और अनाम डिवाइस आईडी (UUID)</h2>
+            <p>हमारा ऐप न्यूज़ अपडेट्स पर चर्चा (कमेंट/रिप्लाई) करने की सुविधा देता है। यदि आप कोई कमेंट करते हैं, तो आपका दिया गया नाम (वैकल्पिक) और आपका मैसेज हमारे Firebase डेटाबेस में सुरक्षित रूप से सेव होता है। आपको बिना लॉगिन के अपने कमेंट एडिट करने की सुविधा देने के लिए, ऐप एक अनाम और रैंडम यूनिक आईडी (UUID) जनरेट करता है जो आपके डिवाइस की लोकल मेमोरी में सेव होती है। <strong>हम आपके फोन की असली हार्डवेयर आईडी (जैसे IMEI या MAC एड्रेस) नहीं लेते हैं।</strong> आपके UUID का उपयोग केवल ऐप के अंदर आपके कमेंट्स को मैनेज करने के लिए किया जाता है।</p>
+
+            <h2>4. विज्ञापन (Advertisements) और थर्ड-पार्टी सेवाएं</h2>
             <p>यह ऐप विज्ञापनों द्वारा समर्थित है। ऐप में बैनर, इंटरस्टीशियल और ऐप ओपन विज्ञापन दिखाने के लिए हम Google AdMob का उपयोग करते हैं। ये थर्ड-पार्टी नेटवर्क प्रासंगिक विज्ञापन दिखाने के लिए आपके डिवाइस की एडवरटाइजिंग आईडी, आईपी एड्रेस और उपयोग डेटा एकत्र कर सकते हैं। हम आपका टैक्स डेटा या GA55 की जानकारी इन विज्ञापनदाताओं के साथ कभी साझा नहीं करते हैं।</p>
 
-            <h2>4. इंटरनेट की अनुमति</h2>
-            <p>ऐप को लाइव टैक्स अपडेट प्राप्त करने, विज्ञापन दिखाने, ऐप अपडेट की जांच करने और आधिकारिक पीडीएफ लिंक खोलने के लिए इंटरनेट की आवश्यकता होती है। यह आपके निजी डेटा को इंटरनेट पर अपलोड करने के लिए कभी भी इंटरनेट का उपयोग नहीं करता है।</p>
+            <h2>5. इंटरनेट की अनुमति</h2>
+            <p>ऐप को लाइव टैक्स अपडेट प्राप्त करने, विज्ञापन दिखाने, ऐप अपडेट की जांच करने, यूज़र कमेंट पोस्ट करने और आधिकारिक पीडीएफ लिंक खोलने के लिए इंटरनेट की आवश्यकता होती है। यह आपके निजी टैक्स डेटा को इंटरनेट पर अपलोड करने के लिए कभी भी इंटरनेट का उपयोग नहीं करता है।</p>
 
-            <h2>5. लोकल स्टोरेज (डिवाइस मेमोरी)</h2>
-            <p>आपकी सुविधा के लिए, ऐप आपके द्वारा दर्ज किए गए वेतन विवरण और बनाई गई PDF फ़ाइलों को आपके डिवाइस के लोकल स्टोरेज में ही सुरक्षित रखता है।</p>
+            <h2>6. लोकल स्टोरेज (डिवाइस मेमोरी)</h2>
+            <p>आपकी सुविधा के लिए, ऐप आपके द्वारा दर्ज किए गए वेतन विवरण, अनाम UUID, और बनाई गई PDF फ़ाइलों को आपके डिवाइस के लोकल स्टोरेज में ही सुरक्षित रखता है।</p>
 
-            <h2>6. नीति में बदलाव</h2>
+            <h2>7. नीति में बदलाव</h2>
             <p>हम समय-समय पर अपनी गोपनीयता नीति को अपडेट कर सकते हैं। इसलिए, हम आपको सलाह देते हैं कि आप किसी भी बदलाव के लिए समय-समय पर इस पेज को देखते रहें।</p>
 
-            <h2 id="contact">7. संपर्क करें</h2>
+            <h2 id="contact">8. संपर्क करें</h2>
             <p>यदि हमारी गोपनीयता नीति के बारे में आपके कोई प्रश्न या सुझाव हैं, तो बेझिझक हमसे संपर्क करें: <a href="mailto:pc.muhal@gmail.com">pc.muhal@gmail.com</a></p>
         </div>
 
