@@ -4,50 +4,142 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy - TaxCalc Pro (Aaykar Ganana)</title>
+    <!-- Google Fonts for Premium Look -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; padding: 0; margin: 0; background-color: #f8f9fa; color: #333; }
+        :root {
+            --primary-color: #1a365d;
+            --secondary-color: #2b6cb0;
+            --accent-color: #ed8936;
+            --bg-color: #f7fafc;
+            --text-color: #2d3748;
+            --card-bg: #ffffff;
+        }
+
+        body { 
+            font-family: 'Poppins', sans-serif; 
+            line-height: 1.7; 
+            padding: 0; 
+            margin: 0; 
+            background-color: var(--bg-color); 
+            color: var(--text-color); 
+        }
         
-        /* Classic Top Header Bar */
-        .header-bar { background: #1e3c72; color: #ffffff; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-        .header-bar h2 { margin: 0; font-size: 18px; letter-spacing: 0.5px; }
+        /* Premium Top Header Bar */
+        .header-bar { 
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); 
+            color: #ffffff; 
+            padding: 18px 25px; 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15); 
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
         
-        /* Language Toggle Button */
+        .header-bar h2 { 
+            margin: 0; 
+            font-size: 20px; 
+            letter-spacing: 0.5px; 
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        /* Modern Pill-Shaped Toggle Button */
         .lang-btn {
-            background: #ff9800;
+            background: var(--accent-color);
             color: #ffffff;
             border: none;
-            padding: 7px 14px;
-            font-size: 13px;
-            font-weight: bold;
-            border-radius: 4px;
+            padding: 8px 20px;
+            font-size: 14px;
+            font-weight: 600;
+            border-radius: 50px;
             cursor: pointer;
-            transition: background 0.3s;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 8px rgba(237, 137, 54, 0.4);
         }
-        .lang-btn:hover { background: #f57c00; }
+        .lang-btn:hover { 
+            background: #dd6b20; 
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(237, 137, 54, 0.5);
+        }
 
-        .container { max-width: 800px; margin: 20px auto; background: #ffffff; padding: 30px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
-        h1, h2.section-title { color: #1e3c72; }
-        p { font-size: 15px; color: #444; }
+        /* Content Container with Glassmorphism touch */
+        .container { 
+            max-width: 850px; 
+            margin: 40px auto; 
+            background: var(--card-bg); 
+            padding: 40px; 
+            border-radius: 16px; 
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05); 
+        }
+
+        h1 { 
+            color: var(--primary-color); 
+            font-size: 28px;
+            margin-top: 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e2e8f0;
+        }
+        
+        /* Section Styling */
+        h2 { 
+            color: var(--secondary-color); 
+            font-size: 18px;
+            margin-top: 30px;
+            display: flex;
+            align-items: center;
+        }
+        
+        /* Small left border accent for headings */
+        h2::before {
+            content: '';
+            display: inline-block;
+            width: 4px;
+            height: 20px;
+            background-color: var(--accent-color);
+            margin-right: 10px;
+            border-radius: 2px;
+        }
+
+        p { font-size: 15px; color: #4a5568; margin-bottom: 16px; }
+        strong { color: #2d3748; font-weight: 600; }
         
         /* Footer Links */
-        .footer-nav { text-align: center; margin-top: 30px; padding-top: 15px; border-top: 1px solid #ddd; font-size: 14px; }
-        .footer-nav a { color: #1e3c72; text-decoration: none; margin: 0 10px; font-weight: 600; }
-        .footer-nav a:hover { text-decoration: underline; }
+        .footer-nav { 
+            text-align: center; 
+            margin-top: 40px; 
+            padding-top: 20px; 
+            border-top: 1px solid #e2e8f0; 
+            font-size: 15px; 
+        }
+        
+        a { color: var(--secondary-color); text-decoration: none; font-weight: 600; transition: color 0.3s; }
+        a:hover { color: var(--primary-color); text-decoration: underline; }
+        
+        .footer-nav a { margin: 0 15px; }
 
-        a { color: #1e3c72; text-decoration: none; font-weight: bold; }
-        a:hover { text-decoration: underline; }
+        /* Responsive */
+        @media (max-width: 600px) {
+            .container { margin: 20px; padding: 25px; }
+            .header-bar h2 { font-size: 16px; }
+            .lang-btn { padding: 6px 15px; font-size: 12px; }
+        }
     </style>
 </head>
 <body>
 
     <!-- CLASSIC TOP HEADER BAR -->
     <div class="header-bar">
-        <h2>📊 TaxCalc Pro</h2>
+        <h2>🛡️ TaxCalc Pro</h2>
         <button id="toggleBtn" class="lang-btn" onclick="toggleLanguage()">हिंदी में पढ़ें</button>
     </div>
 
     <div class="container">
-        <!-- ENGLISH CONTENT -->
+        <!-- =================== ENGLISH CONTENT =================== -->
         <div id="englishContent">
             <h1>Privacy Policy</h1>
             <p><strong>Last updated:</strong> November 2026</p>
@@ -57,30 +149,32 @@
             <h2>1. Data Collection and File Processing</h2>
             <p>The App provides a feature to upload your original GA55 document to extract and read data for tax calculations. <strong>Please note that all document processing, data extraction, and PDF generation happen locally on your device.</strong> We do not upload, store, or share your GA55 documents, personal information, or financial data on any external servers.</p>
 
-            <h2>2. Live Updates & Firebase Services</h2>
+            <h2>2. App Lock & Biometric Security (New)</h2>
+            <p>To enhance your privacy, the App offers an "App Lock" feature utilizing your device's built-in fingerprint or PIN authentication. <strong>We do not collect, store, transmit, or have direct access to your biometric data (fingerprints or face scans).</strong> This authentication is processed entirely by your Android device's native operating system to securely unlock the App locally.</p>
+
+            <h2>3. Live Updates & Firebase Services</h2>
             <p>The App uses <strong>Firebase Realtime Database</strong> (by Google) to fetch live breaking news banners, tax circulars, and notifications. This service retrieves public information published by the admin.</p>
 
-            <!-- नया पॉइंट जोड़ा गया है -->
-            <h2>3. User Comments & Anonymous Device ID (UUID)</h2>
+            <h2>4. User Comments & Anonymous Device ID (UUID)</h2>
             <p>The App features a discussion/reply section for news updates. If you choose to post a comment, the name you provide (optional) and your message are stored securely in our Firebase database. To allow you to manage and edit your comments without requiring a user login/account, the App generates an anonymous, random Unique Identifier (UUID) saved locally on your device. <strong>We do not access, collect, or track your real hardware Device ID (such as IMEI or MAC address).</strong> The UUID is used strictly for managing your comments within the app.</p>
 
-            <h2>4. Advertisements and Third-Party Services</h2>
+            <h2>5. Advertisements and Third-Party Services</h2>
             <p>The App is supported by advertisements. We use third-party advertising services (such as Google AdMob) to serve Banner, Interstitial, and App Open ads. These third-party networks may collect and use non-personal data, such as your device's Advertising ID, IP address, and usage information, to provide personalized or non-personalized ads. We do not share your tax data or GA55 information with these advertisers.</p>
 
-            <h2>5. Internet Permission</h2>
+            <h2>6. Internet Permission</h2>
             <p>The App requires internet permission to fetch live tax updates, load advertisements, check for app updates, post user comments, and open official PDF links. It does not use the internet to secretly upload your private tax data.</p>
 
-            <h2>6. Local Storage</h2>
-            <p>The App saves your preferences, salary entries, anonymous UUID, and generated PDF files locally on your device's storage using <code>SharedPreferences</code> for your convenience. This data remains strictly on your device.</p>
+            <h2>7. Local Storage</h2>
+            <p>The App saves your preferences, salary entries, anonymous UUID, App Lock status, and generated PDF files locally on your device's storage for your convenience. This data remains strictly on your device.</p>
 
-            <h2>7. Changes to This Privacy Policy</h2>
+            <h2>8. Changes to This Privacy Policy</h2>
             <p>We may update our Privacy Policy from time to time. We advise you to review this page periodically for any changes. Changes are effective immediately upon posting.</p>
 
-            <h2 id="contact">8. Contact Us</h2>
+            <h2 id="contact">9. Contact Us</h2>
             <p>If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us at: <a href="mailto:pc.muhal@gmail.com">pc.muhal@gmail.com</a></p>
         </div>
 
-        <!-- HINDI CONTENT (Hidden by default) -->
+        <!-- =================== HINDI CONTENT =================== -->
         <div id="hindiContent" style="display: none;">
             <h1>गोपनीयता नीति (Privacy Policy)</h1>
             <p><strong>अंतिम अपडेट:</strong> नवम्बर 2026</p>
@@ -90,26 +184,28 @@
             <h2>1. डेटा संग्रह और फ़ाइल प्रोसेसिंग</h2>
             <p>यह ऐप आपको अपना मूल GA55 प्रपत्र अपलोड करके डेटा पढ़ने की सुविधा देता है। <strong>कृपया ध्यान दें कि दस्तावेज़ पढ़ने, डेटा निकालने और PDF बनाने की पूरी प्रक्रिया केवल आपके मोबाइल/डिवाइस के अंदर ही होती है।</strong> हम आपके GA55 दस्तावेज़ या किसी भी व्यक्तिगत/वित्तीय डेटा को अपने सर्वर पर अपलोड, स्टोर या शेयर नहीं करते हैं।</p>
 
-            <h2>2. लाइव अपडेट और फ़ायरबेस सेवाएं</h2>
+            <h2>2. ऐप लॉक और बायोमेट्रिक सुरक्षा (नया)</h2>
+            <p>आपकी गोपनीयता (Privacy) को और सुरक्षित बनाने के लिए, ऐप में 'ऐप लॉक' की सुविधा दी गई है जो आपके फोन के फिंगरप्रिंट या पिन का उपयोग करती है। <strong>हम आपका बायोमेट्रिक डेटा (फिंगरप्रिंट आदि) कभी भी एक्सेस, स्टोर या किसी सर्वर पर सेंड नहीं करते हैं।</strong> यह ऑथेंटिकेशन पूरी तरह से आपके Android डिवाइस के ऑपरेटिंग सिस्टम द्वारा लोकल लेवल पर प्रोसेस किया जाता है।</p>
+
+            <h2>3. लाइव अपडेट और फ़ायरबेस सेवाएं</h2>
             <p>ऐप लाइव ब्रेकिंग न्यूज़ बैनर, टैक्स सर्कुलर और नोटिफिकेशन प्राप्त करने के लिए <strong>Firebase Realtime Database</strong> का उपयोग करता है। यह सेवा केवल एडमिन द्वारा पब्लिश की गई सार्वजनिक जानकारी को डाउनलोड करती है।</p>
 
-            <!-- नया पॉइंट जोड़ा गया है -->
-            <h2>3. यूज़र कमेंट्स और अनाम डिवाइस आईडी (UUID)</h2>
-            <p>हमारा ऐप न्यूज़ अपडेट्स पर चर्चा (कमेंट/रिप्लाई) करने की सुविधा देता है। यदि आप कोई कमेंट करते हैं, तो आपका दिया गया नाम (वैकल्पिक) और आपका मैसेज हमारे Firebase डेटाबेस में सुरक्षित रूप से सेव होता है। आपको बिना लॉगिन के अपने कमेंट एडिट करने की सुविधा देने के लिए, ऐप एक अनाम और रैंडम यूनिक आईडी (UUID) जनरेट करता है जो आपके डिवाइस की लोकल मेमोरी में सेव होती है। <strong>हम आपके फोन की असली हार्डवेयर आईडी (जैसे IMEI या MAC एड्रेस) नहीं लेते हैं।</strong> आपके UUID का उपयोग केवल ऐप के अंदर आपके कमेंट्स को मैनेज करने के लिए किया जाता है।</p>
+            <h2>4. यूज़र कमेंट्स और अनाम डिवाइस आईडी (UUID)</h2>
+            <p>हमारा ऐप न्यूज़ अपडेट्स पर चर्चा (कमेंट/रिप्लाई) करने की सुविधा देता है। यदि आप कोई कमेंट करते हैं, तो आपका दिया गया नाम (वैकल्पिक) और आपका मैसेज हमारे Firebase डेटाबेस में सुरक्षित रूप से सेव होता है। आपको बिना लॉगिन के अपने कमेंट एडिट करने की सुविधा देने के लिए, ऐप एक अनाम और रैंडम यूनिक आईडी (UUID) जनरेट करता है जो आपके डिवाइस की लोकल मेमोरी में सेव होती है। <strong>हम आपके फोन की असली हार्डवेयर आईडी (जैसे IMEI या MAC एड्रेस) नहीं लेते हैं।</strong></p>
 
-            <h2>4. विज्ञापन (Advertisements) और थर्ड-पार्टी सेवाएं</h2>
-            <p>यह ऐप विज्ञापनों द्वारा समर्थित है। ऐप में बैनर, इंटरस्टीशियल और ऐप ओपन विज्ञापन दिखाने के लिए हम Google AdMob का उपयोग करते हैं। ये थर्ड-पार्टी नेटवर्क प्रासंगिक विज्ञापन दिखाने के लिए आपके डिवाइस की एडवरटाइजिंग आईडी, आईपी एड्रेस और उपयोग डेटा एकत्र कर सकते हैं। हम आपका टैक्स डेटा या GA55 की जानकारी इन विज्ञापनदाताओं के साथ कभी साझा नहीं करते हैं।</p>
+            <h2>5. विज्ञापन (Advertisements) और थर्ड-पार्टी सेवाएं</h2>
+            <p>यह ऐप विज्ञापनों द्वारा समर्थित है। ऐप में विज्ञापन दिखाने के लिए हम Google AdMob का उपयोग करते हैं। ये थर्ड-पार्टी नेटवर्क प्रासंगिक विज्ञापन दिखाने के लिए आपके डिवाइस की एडवरटाइजिंग आईडी और आईपी एड्रेस एकत्र कर सकते हैं। हम आपका टैक्स डेटा या GA55 की जानकारी इन विज्ञापनदाताओं के साथ कभी साझा नहीं करते हैं।</p>
 
-            <h2>5. इंटरनेट की अनुमति</h2>
-            <p>ऐप को लाइव टैक्स अपडेट प्राप्त करने, विज्ञापन दिखाने, ऐप अपडेट की जांच करने, यूज़र कमेंट पोस्ट करने और आधिकारिक पीडीएफ लिंक खोलने के लिए इंटरनेट की आवश्यकता होती है। यह आपके निजी टैक्स डेटा को इंटरनेट पर अपलोड करने के लिए कभी भी इंटरनेट का उपयोग नहीं करता है।</p>
+            <h2>6. इंटरनेट की अनुमति</h2>
+            <p>ऐप को लाइव टैक्स अपडेट प्राप्त करने, विज्ञापन दिखाने, और आधिकारिक पीडीएफ लिंक खोलने के लिए इंटरनेट की आवश्यकता होती है। यह आपके निजी टैक्स डेटा को इंटरनेट पर अपलोड करने के लिए कभी भी इंटरनेट का उपयोग नहीं करता है।</p>
 
-            <h2>6. लोकल स्टोरेज (डिवाइस मेमोरी)</h2>
-            <p>आपकी सुविधा के लिए, ऐप आपके द्वारा दर्ज किए गए वेतन विवरण, अनाम UUID, और बनाई गई PDF फ़ाइलों को आपके डिवाइस के लोकल स्टोरेज में ही सुरक्षित रखता है।</p>
+            <h2>7. लोकल स्टोरेज (डिवाइस मेमोरी)</h2>
+            <p>आपकी सुविधा के लिए, ऐप आपके द्वारा दर्ज किए गए वेतन विवरण, अनाम UUID, ऐप लॉक की सेटिंग और बनाई गई PDF फ़ाइलों को आपके डिवाइस के लोकल स्टोरेज में ही सुरक्षित रखता है।</p>
 
-            <h2>7. नीति में बदलाव</h2>
+            <h2>8. नीति में बदलाव</h2>
             <p>हम समय-समय पर अपनी गोपनीयता नीति को अपडेट कर सकते हैं। इसलिए, हम आपको सलाह देते हैं कि आप किसी भी बदलाव के लिए समय-समय पर इस पेज को देखते रहें।</p>
 
-            <h2 id="contact">8. संपर्क करें</h2>
+            <h2 id="contact">9. संपर्क करें</h2>
             <p>यदि हमारी गोपनीयता नीति के बारे में आपके कोई प्रश्न या सुझाव हैं, तो बेझिझक हमसे संपर्क करें: <a href="mailto:pc.muhal@gmail.com">pc.muhal@gmail.com</a></p>
         </div>
 
@@ -128,10 +224,12 @@
             var btn = document.getElementById("toggleBtn");
 
             if (engContent.style.display === "none") {
+                // Show English, Hide Hindi
                 engContent.style.display = "block";
                 hinContent.style.display = "none";
                 btn.innerHTML = "हिंदी में पढ़ें";
             } else {
+                // Show Hindi, Hide English
                 engContent.style.display = "none";
                 hinContent.style.display = "block";
                 btn.innerHTML = "Read in English";
